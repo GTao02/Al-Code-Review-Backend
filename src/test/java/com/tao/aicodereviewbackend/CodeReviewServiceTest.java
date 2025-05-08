@@ -30,7 +30,7 @@ public class CodeReviewServiceTest {
                 "                .build());\n" +
                 "        return response;\n" +
                 "    } \n" +
-                "请使用中文回答");
+                "请使用英文回答");
 
         ChatResponse response = codeReviewService.review(userMessage);
         System.out.println(response.aiMessage().toString());
