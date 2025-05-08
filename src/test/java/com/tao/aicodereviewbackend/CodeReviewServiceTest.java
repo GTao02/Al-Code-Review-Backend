@@ -31,6 +31,7 @@ public class CodeReviewServiceTest {
                 "        return response;\n" +
                 "    } \n" +
                 "请使用中文回答");
+
         ChatResponse response = codeReviewService.review(userMessage);
         System.out.println(response.aiMessage().toString());
     }
