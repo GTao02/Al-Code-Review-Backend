@@ -24,7 +24,6 @@ public class CodeReviewServiceController {
 
     @PostMapping("/review")
     public String review(@RequestBody String message) {
-
         UserMessage userMessage = UserMessage.from(message);
         return codeReviewService.review(userMessage).aiMessage().toString();
     }
